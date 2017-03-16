@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weather App</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+  crossorigin="anonymous"></script>
+</head>
+<style type="text/css">
+
+body {
+	background-image: url("images/body.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%, 100%;
+}
+
+.jumbotron {
+	margin-top: 100px;
+}
+	
+</style>
+<script type="text/javascript">
+	
+</script>
+<body>
+<div class="container container-fluid">
+<div class="jumbotron">
+	<h1 class="text-center">Weather App</h1>
+<div class="row">
+	<div class="col-md-3">
+	<h3>Temperature</h3>
+			<div id="temp" class="well">
+			</div>
+	</div>
+	<div class="col-md-3">
+	<h3>Sky Conditions</h3>
+		<div id="sky-view" class="well">
+		</div>
+	</div>
+	<div class="col-md-3">
+	<h3>Wind</h3>
+			<div id="wind" class="well">
+			</div>
+	</div>
+	<div class="col-md-3">
+	<h3>Humidity</h3>
+		<div id="humidity" class="well">
+		</div>
+	</div>
+
+
+		<button class="btn btn-primary center-block" id="button">Get Weather</button>
+
+		<script src="js/main.js" ></script>
+
+
+</div>
+</div>
+</div>	
+</body>
+</html>
