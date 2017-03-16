@@ -11,29 +11,40 @@
 </head>
 <style type="text/css">
 
-body {
-	background-image: url("images/body.jpg");
+#body {
+	background-image: url("http://contest.dpi-sig.org/wp/wp-content/uploads/2017/02/High-Country-Weather-1-of-1-1.jpg");
 	background-repeat: no-repeat;
-	background-size: 100%, 100%;
+	background-size: cover;
 }
 
 .jumbotron {
 	margin-top: 100px;
+	background-color: rgba(222, 223, 226, .4);
 }
+
+.btn-group {
+	margin: 0 0 0 0;
+}
+
 	
 </style>
 <script type="text/javascript">
 	
 </script>
-<body>
+<body id="body">
 <div class="container container-fluid">
-<div class="jumbotron">
+<div class="jumbotron transbox">
 	<h1 class="text-center">Weather App</h1>
 <div class="row">
 	<div class="col-md-3">
-	<h3>Temperature</h3>
+	
+	<h3>Temperature  <div class="btn-group"><button id="far" class="btn btn-primary">F</button><button id="cel" class="btn btn-primary">C</button></div> </h3>
+	
+	
 			<div id="temp" class="well">
 			</div>
+			
+			
 	</div>
 	<div class="col-md-3">
 	<h3>Sky Conditions</h3>
@@ -52,7 +63,7 @@ body {
 	</div>
 
 
-		<button class="btn btn-primary center-block" id="button">Get Weather</button>
+		<button class="btn btn-primary btn-block" id="button">Get Weather</button>
 
 		<script src="js/main.js" ></script>
 
